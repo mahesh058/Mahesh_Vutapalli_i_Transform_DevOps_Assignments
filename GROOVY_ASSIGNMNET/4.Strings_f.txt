@@ -1,0 +1,10 @@
+String str="Hello, World. How are you?"
+ar=str.split()
+
+println ar[-1].reverse()
+
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy 4.Strings_f.groovy
+?uoy

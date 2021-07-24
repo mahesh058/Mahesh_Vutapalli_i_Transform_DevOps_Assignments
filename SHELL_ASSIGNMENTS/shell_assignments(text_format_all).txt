@@ -1,0 +1,280 @@
+#!/bin/bash
+#assignment-0
+echo $USER #GIVES USERNAME
+echo $HOME #GIVES HOME DIRECTORY FILE
+
+echo $HISTCONTROL #GIVES THE HISTROY CONTROL FORMAT
+echo $TERM #GIVES FORMAT OF COMPILED FILETYPE
+
+#!/bin/bash
+#assignment-08
+echo -e "FIRSTNAME : \c"
+read first_name
+echo -e "LASTNAME : \c"
+read last_name
+echo -e "USERAGE : \c"
+read user_age
+dt=$(date +'%H')
+if [ $dt -gt 5 ] && [ $dt -lt 12 ]
+then
+    age_after=$((user_age + 10 ))
+    echo "Good Morning $first_name $last_name -- $user_age and your age after 10 years is $age_after"
+elif [ $dt -gt 12 ] && [ $dt -lt 16 ]
+then
+    age_after=$((user_age + 10 ))
+    echo "Good Afternoon $first_name $last_name -- $user_age and your age after 10 years is $age_after"
+elif [ $dt -gt 16 ] && [ $dt -lt 19 ]
+then 
+    age_after=$((user_age + 10 ))
+    echo "Good Evening $first_name $last_name -- $user_age and your age after 10 years is $age_after"
+elif [ $dt -gt 19 ] && [ $dt -lt 2 ]
+then 
+    age_after=$((user_age + 10 ))
+    echo "Good Night $first_name $last_name -- $user_age and your age after 10 years is $age_after"
+else echo "GO TO SLEEP MR.$first_name $last_name"
+fi
+
+#!/bin/bash
+#assignment-09
+
+SERVERLIST=(BALAYA CHIRU NAG VENKY)
+i=0
+
+until [ $i -eq ${#SERVERLIST[@]} ]
+do 
+ echo ${SERVERLIST[i]}
+ ((i++))
+done
+
+#!/bin/bash
+#assignment-10
+
+
+read -p "USERNAME : " user_name
+
+read -sp "PASSWORD : " pass_word
+
+echo -e "\ndone"
+echo -e "user name -->$user_name \npassword -->$pass_word"
+
+#!/bin/bash
+#assignment-11
+
+
+read -p "enter the number to guess : " number
+test_number=3
+if [ $number -eq $test_number ]
+then 
+    echo "YES THE NUMBER $number YOU GUESS IS RIGHT"
+else 
+    echo "SORRY! THE NUMBER YOU GUESS IS WRONG"
+fi
+
+
+#!/bin/bash
+#assignment-14
+
+
+items=(tea tiffin meals)
+echo "select any one from list"
+for i in ${items[@]}
+do
+    echo " $i"
+done
+read -p "select the item : " item
+case $item in 
+    tea )
+        echo "TEA -->Rs.10" ;;
+        #break ;;
+    tiffin )
+        echo "TIFFIN -->Rs.30" ;;
+        #break ;;
+    meals )
+        echo "MEALS -->Rs.50" ;;
+        #break ;;
+    * ) echo -e  "OUT OF LIST \n PLEASE DO AGAIN" ;;
+        #break;;
+    esac
+
+
+#!/bin/bash
+#assignment-15
+
+
+read -p "enter a number :" var
+while [ $var -ne 0 ]
+do 
+   echo "a simple message $var"
+   ((var--))
+done 
+
+
+#!/bin/bash
+#assignment-16
+
+while read p
+do
+    echo $p
+done < assignment-16text.txt
+#cat <assignment-16text.txt
+
+assignment 16text file 
+chiru nag balaya venky
+pk mb ntr prabhas
+aa rc nani no
+jai balaya ok ok 
+something : Tue Jul  6 10:53:30 IST 2021
+something : Tue Jul  6 10:54:33 IST 2021
+
+#!/bin/bash 
+#assignment-17
+dt=$(date)
+while read u
+do 
+    echo $u
+done < assignment-16text.txt
+echo "end time in assignment-17 : $dt" >> assignment-16text.txt
+
+#!/bin/bash
+#assignment-18
+
+IFS="|"
+while read line
+do
+    for i in $line
+    do
+        echo "$i"
+    done
+done <assignment-18text.txt
+
+#!/bin/bash
+#assignment-19
+trap "echo signal detected" SIGINT SIGTSTP 9 15
+choices=(tea coffee milk exit)
+select i in ${choices[@]}
+do
+
+    echo $i
+    case $i in 
+        exit ) break ;;
+        tea )
+            echo $i 
+            for cmd in clear 
+            do
+                $cmd
+            done ;;
+        coffee ) 
+            for cmd in clear 
+            do
+                $cmd
+            done ;;
+        milk ) 
+            for cmd in clear 
+                do
+                    $cmd
+                done ;;
+        * ) echo "proper choice" ;;
+esac
+done
+exit 0
+
+#!/bin/bash
+#assignment-21
+fun(){
+    echo "inside a function"
+    sleep 5
+}
+
+echo "calling a function"
+sleep 5
+fun
+echo "outside the function"
+
+#!/bin/bash
+#assignment-22
+fun(){
+    local lvar=9
+    echo "local variable  in function $lvar"
+    sleep 5
+    echo "global var in function $1"
+    sleep 5
+}
+
+gvar=10
+echo "global variable befor calling function $gvar"
+echo "local variable befor calling function $lvar"
+sleep 5
+echo "calling a function"
+fun $gvar
+sleep 5
+echo " after calling a function"
+sleep 5
+echo "global variable befor calling function $gvar"
+echo "local variable befor calling function $lvar"
+
+
+#!/bin/bash
+#assignment-23
+fun(){
+    local age=$1
+    local total_days_in_year=365
+    in_days=$((age*total_days_in_year))
+    #echo $in_days
+    return $in_days
+}
+confirm(){
+    local age=$1
+    local name=$2
+    echo -e "is this your name $name and age $age is correct [y/n] : \c"
+    read choice
+    if [ $choice = 'y' ]
+    then 
+        fun $age
+        echo "Your name $name and age $age and your age in days $in_days"
+    elif [ $choice = 'n' ]
+    then 
+        echo "run again and please enter correct details"
+    else
+        echo "run again and enter proper choice" 
+    fi   
+}
+echo -e "enter your name : \c"
+read name
+echo -e "what is your age : \c"
+read age
+confirm $age $name
+
+#!/bin/bash
+#assignment-24
+gender(){
+    local no_of_arms=2
+    local no_of_legs=2
+    if [ $1 = 'male' ]
+    then
+        echo 'male'
+        male $no_of_arms $no_of_legs
+    elif [ $1 = 'female' ]
+    then
+        echo 'female'
+        female $no_of_arms $no_of_legs
+    else
+        echo "error in input"
+    fi
+
+
+}
+male(){
+    arms=$1
+    legs=$2
+    beards="has a beard "
+    echo -e "characteristcs of male:\nno of arms = $arms\nno of legs = $legs\n$beards"
+}
+female(){
+    arms=$1
+    legs=$2
+    beards="NO beard "
+    echo -e "characteristcs of male:\nno of arms = $arms\nno of legs = $legs\n$beards"
+}
+echo -e "enter the gender : \c"
+read gender_deatails
+gender $gender_deatails

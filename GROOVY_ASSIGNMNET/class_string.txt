@@ -1,0 +1,29 @@
+Program:
+class Course {
+
+	String name
+	int days
+	def getvalues(String n ,int d)
+	{
+		def name = n
+		def days = d
+		def l = [name:n,days:d]
+	}
+}
+
+
+Course First=new Course()
+Course Second=new Course()
+Course Third=new Course()
+Course Fourth=new Course()
+
+def common = [First.getvalues('git', 2),   Second.getvalues('groovy', 2), Third.getvalues('python', 4), Fourth.getvalues('unix', 4)]
+def sort = common.sort{a, b -> b["days"] <=> a["days"] ?: a["name"] <=> b["name"]}
+sort.each { println it }
+
+Answer:
+PS C:\Users\user\Desktop\groovy> groovy class_string.groovy
+[name:python, days:4]
+[name:unix, days:4]
+[name:git, days:2]
+[name:groovy, days:2]

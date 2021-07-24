@@ -1,0 +1,19 @@
+String i="racecar"
+String j=i.reverse()
+println i.equals(j)
+/*if (i==j)
+{
+    println "yes it's a palindrome $i == $j"
+}
+//print j
+*/
+String str="Bob"
+String str2=str.reverse()
+println str.equalsIgnoreCase(str2)
+
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy 4.Strings_c.groovy
+true
+true

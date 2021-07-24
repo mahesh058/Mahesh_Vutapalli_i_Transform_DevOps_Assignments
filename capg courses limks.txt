@@ -1,0 +1,26 @@
+Git and Github:
+
+devops overview:
+
+unix and shell script:
+  https://www.youtube.com/watch?v=cQepf9fY6cE&list=PLS1QulWo1RIYmaxcEqw5JhK3b-6rgdWO_
+
+python :
+coursera programming for evrybody
+
+groovy:
+
+gradle: https://www.youtube.com/watch?v=aYu994I8Z6I&list=PLMxpKvJf0K0QUyvmkKZu7WpwTVzdePGTl
+pluralsight : https://app.pluralsight.com/library/courses/gradle-build-tool-fundamentals/table-of-contents
+
+maven: https://www.youtube.com/watch?v=QunBtnwYMhU&list=PLzS3AYzXBoj8E3NjjWNjrrFjyexXIyZbL
+
+jenkins:
+
+pluralsight: https://app.pluralsight.com/library/courses/getting-started-jenkins/table-of-contents
+
+coursera: 	https://www.coursera.org/programs/capgemini-learning-program-71mtd/browse?authProvider=capgemini&productId=MX3gW2nXEeuI4Aqy1at7YQ&productType=course&query=jenkins&showMiniModal=true
+		https://www.coursera.org/programs/capgemini-learning-program-71mtd/browse?authProvider=capgemini&productId=Z-wtBczwEeqDEQ4mUXQPhw&productType=course&query=jenkins&showMiniModal=true
+
+youtube:    https://youtu.be/fo36b23cpIU
+​	    https://youtu.be/11z2x3VYO_I

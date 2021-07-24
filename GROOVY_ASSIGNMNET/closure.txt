@@ -1,0 +1,14 @@
+4.	Closures as a filter 
+Create a list of numbers. Print all elements greater than zero. 
+
+
+program: 
+
+def lst=[-1,-2,3,4,5,0,6,7,8,9]
+def closu=lst.findAll{item -> item >0}
+println closu
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy Closure.groovy
+[3, 4, 5, 6, 7, 8, 9]     

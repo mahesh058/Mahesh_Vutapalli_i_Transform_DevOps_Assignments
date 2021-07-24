@@ -1,0 +1,15 @@
+String str="Hello, World. How are you?"
+ar=str.split()
+println "length is "+ar.size()
+
+tk=str.tokenize()
+println tk
+println tk.size()
+
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy 4.Strings_d.groovy
+length is 5
+[Hello,, World., How, are, you?]
+5

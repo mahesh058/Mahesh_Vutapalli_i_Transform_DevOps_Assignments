@@ -1,0 +1,23 @@
+5.Multi-line strings 
+Make a multi-line string. Compute the number of vowels on each line. 
+
+program:
+
+def str="""  hello this is groovy a programming
+ language which is similar to java python c
+ syntax. 
+    This is the line for assignment."""
+//def lst=["a","e","i","o","u","A","E","I","O","U"]
+st=str.toList()
+count=0
+for (i in str){
+    if (i=='a'|| i=='e' || i=='i'||i=='o'||i=='u'){
+        count=count+1
+    }
+}
+println count
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy multi_line.groovy
+33

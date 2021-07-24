@@ -1,0 +1,39 @@
+//BYTE RANGE
+println "Byte range starts from --> "+Byte.MIN_VALUE
+println "Byte range ends at --> "+Byte.MAX_VALUE
+
+//SHORT RANGE
+println "Short range starts from --> "+Short.MIN_VALUE
+println "Short range starts ends at --> "+Short.MAX_VALUE
+
+//INTEGER RANGE
+println "Integer range starts from --> "+Integer.MIN_VALUE
+println "Integer range ends at --> "+Integer.MAX_VALUE
+
+//LONG RANGE
+println "Long range starts from --> "+Long.MIN_VALUE
+println "Long range ends at --> "+Long.MAX_VALUE
+
+//FLOAT RANGE
+println "Float range starts from --> "+Float.MIN_VALUE
+println "Float range ends at --> "+Float.MAX_VALUE
+
+//DOUBLE RANGE
+println "Double range starts from --> "+Double.MIN_VALUE
+println "Double range ends at --> "+Double.MAX_VALUE
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy 2.Wrapple_Classes.groovy
+Byte range starts from --> -128
+Byte range ends at --> 127
+Short range starts from --> -32768       
+Short range starts ends at --> 32767     
+Integer range starts from --> -2147483648
+Integer range ends at --> 2147483647     
+Long range starts from --> -9223372036854775808
+Long range ends at --> 9223372036854775807     
+Float range starts from --> 1.4E-45
+Float range ends at --> 3.4028235E38
+Double range starts from --> 4.9E-324
+Double range ends at --> 1.7976931348623157E308

@@ -1,0 +1,8 @@
+//length of  string"Hello,Groovy!"
+
+println "Hello,Groovy!".size()
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy test.groovy
+13     

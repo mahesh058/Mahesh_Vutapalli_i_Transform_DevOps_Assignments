@@ -1,0 +1,7 @@
+def x = 1+2
+println "$x-"+x.getClass().getName()
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy Number_data_types_b.groovy
+2.5-java.math.BigDecimal

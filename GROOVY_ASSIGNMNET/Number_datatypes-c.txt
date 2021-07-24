@@ -1,0 +1,10 @@
+x=5
+y=2
+z=5/2
+r=x.intdiv(y)
+println "$x + $y = $z -->"+z.getClass().getName()
+println "$x + $y = $r -->"+r.getClass().getName() //integer division
+
+answer:
+5 + 2 = 2.5 -->java.math.BigDecimal
+5 + 2 = 2 -->java.lang.Integer

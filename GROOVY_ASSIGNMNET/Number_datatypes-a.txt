@@ -1,0 +1,49 @@
+def num1=2
+println "$num1-"+num1.getClass().getName()
+//integers
+def num1=2
+println "$num1-"+num1.getClass().getName()
+def num2=200
+println "$num2-"+num2.getClass().getName()
+def num3=2000
+println "$num3-"+num3.getClass().getName()
+
+def num4=20000
+println "$num4-"+num4.getClass().getName()
+
+def num5=200000
+println "$num5-"+num5.getClass().getName()
+
+def num6=20000000000
+println "$num6-"+num6.getClass().getName()
+
+def num7=20000000000000000000
+println "$num7-"+num7.getClass().getName()
+
+// for float
+
+def num8=2.0
+println "$num8-"+num8.getClass().getName()
+def num9=2.000
+println "$num9-"+num9.getClass().getName()
+def num10=2.00000000
+println "$num10-"+num10.getClass().getName()
+
+def num11=2.000000000000
+println "$num11-"+num11.getClass().getName()
+
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy test.groovy
+2-java.lang.Integer
+200-java.lang.Integer   
+2000-java.lang.Integer  
+20000-java.lang.Integer 
+200000-java.lang.Integer
+20000000000-java.lang.Long
+20000000000000000000-java.math.BigInteger
+2.0-java.math.BigDecimal       
+2.000-java.math.BigDecimal     
+2.00000000-java.math.BigDecimal
+2.000000000000-java.math.BigDecimal

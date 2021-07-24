@@ -1,0 +1,11 @@
+String name="Mahesh"
+println "Hello $name"
+println "hello "+name
+println "Hello ".concat("mahesh")
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy 4.Strings_b.groovy
+Hello Mahesh
+hello Mahesh
+Hello mahesh

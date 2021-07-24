@@ -1,0 +1,11 @@
+def lst=["apple","banana","pineapple","mango","cheery","apples"]
+println "original list --> "+lst
+println "sorted list in ascending order--> "+lst.sort()
+println "sorted list in descending order --> "+lst.sort().reverse()
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy Sorting_strings.groovy
+original list --> [apple, banana, pineapple, mango, cheery, apples]
+sorted list in ascending order--> [apple, apples, banana, cheery, mango, pineapple]
+sorted list in descending order --> [pineapple, mango, cheery, banana, apples, apple]

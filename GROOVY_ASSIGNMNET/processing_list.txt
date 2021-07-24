@@ -1,0 +1,23 @@
+2.Processing a list of numbers 
+Create a list of numbers. Add them together. First double each number, then add them up. Compute their average. 
+
+program:
+def lst=[1,2,3,4,5,6,7,8,9]
+def lst2=lst.collect{item -> item*2}
+sum1=0
+sum2=0
+
+for (Integer i=0;i<lst.size();i++){
+    sum1=sum1+lst[i]
+    sum2=sum2+lst2[i]
+}
+
+avg1=sum1/lst.size()
+avg2=sum2/lst.size()
+println "$avg1 $avg2"
+
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy test.groovy
+5 10

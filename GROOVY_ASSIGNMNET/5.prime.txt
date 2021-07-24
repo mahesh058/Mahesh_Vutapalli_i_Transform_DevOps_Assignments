@@ -1,0 +1,33 @@
+def Prime(num){
+    i=2
+    count=0
+    while(i<num){
+        if (num%i==0){
+            count=count+1
+            if (count==1){
+                return false
+            }
+        }
+        i=i+1
+    } 
+    return true
+ }
+
+ print "enter the num: "
+ num=System.console().readLine()
+ number=num as Integer
+ result=Prime(number)
+ if (result){
+     println "yes $num prime number"
+ }
+ else{ println "$num is not a primenumber"}
+
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy 5.prime.groovy
+enter the num: 61
+yes 61 prime number
+PS C:\Users\user\Desktop\groovy> groovy 5.prime.groovy
+enter the num: 69
+69 is not a primenumber

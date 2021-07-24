@@ -1,0 +1,30 @@
+6.Padded binary output 
+Print the numbers from 0 to 15 in binary (use Java's Integer.toBinaryString() method). Use a method in String from the Groovy JDK to make all the output values have four digits. 
+
+program: 
+
+Integer num=16
+for (int i=0;i<num;i++){
+    k=Integer.toBinaryString(i)
+    println(k.padLeft(4,'0'))
+}
+
+answer:
+
+PS C:\Users\user\Desktop\groovy> groovy Padding_binary
+0000
+0001
+0010
+0011
+0100
+0101
+0110
+0111
+1000
+1001
+1010
+1011
+1100
+1101
+1110
+1111
